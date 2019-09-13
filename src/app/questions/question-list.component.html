@@ -1,0 +1,16 @@
+<StackLayout>
+
+    <GridLayout rows="auto"columns="auto, *, auto">
+        <Label [col]="0" fontSize="20" text="SCORE :"></Label>
+
+    </GridLayout>
+
+    <GridLayout rows="auto"columns="auto, *, auto">
+        <Label [col]="1" fontSize="20" text="test ?"></Label>
+
+    </GridLayout>
+    <Button width="100" text="Vrai" (tap)="onChange()" background="blue" [nsRouterLink]="['/answers']"></Button>
+    <Button width="100" text="Faux" background="red" (tap)="onChange()"></Button>
+
+
+</StackLayout>
